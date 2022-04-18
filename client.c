@@ -64,8 +64,8 @@ int	main(int arc, char **arv)
 	i = -1;
 	if (arc == 3)
 	{
-		if (ft_atoi(arv[2]) == 0)
-			return (0);
+		if (ft_atoi(arv[1]) <= 0)
+			return (1);
 		while (arv[2][++i])
 			sendsignal(arv[2][i], arv[1]);
 	}
